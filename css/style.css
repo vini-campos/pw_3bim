@@ -1,0 +1,109 @@
+body{
+background-color: #000;
+}
+
+
+.navbar-limit {
+    max-width: 60%;
+    background-color: rgba( 120, 20, 40, 0.20); /*52, 21, 57,*/
+    border-radius: 10px;
+}
+
+.redstone-text {
+    color: #ff0000 !important;
+    font-family: 'Orbitron', Arial, sans-serif;
+    text-shadow: 0 0 5px #5e1010;
+}
+
+.navbar .nav-link {
+    font-weight: bold;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+/*
+não sei como usar uma classe prória nesse elemento,
+por isso ainda ta com o nome generico
+no de baixo e acima desse comentario
+*/
+
+.navbar .nav-link:hover {
+  color: #ff0000;
+}
+
+.dropdown-menu {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-item {
+    color: #000000 !important;
+}
+
+.dropdown-item:hover {
+    background: rgba(255, 0, 0, 0.2) !important;
+    color: #ff0000 !important;
+}
+
+.wallpaper-fundo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.wallpaper-fundo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-principal-container {
+    color: #ffffff;
+    text-shadow: 2px 2px 8px #6d0000;
+    position: absolute;
+    font-family: 'Orbitron', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    top: 300px;
+    left: 400px;
+    flex-direction: column;
+}
+
+.subtitulo {
+    color: #ffffff;
+    text-shadow: 2px 2px 8px #000;
+    position: absolute;
+    font-family: 'Orbitron', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    top: 600px;
+    left: 406px;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #000;
+    padding: 45px;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.redes-sociais img {
+    height: 35px;
+    width: 35px;
+    transition: 0.4s ease;
+}
+
+.redes-sociais img:hover {
+    transition: 0.4s ease;
+    transform: scale(1.2);
+}
