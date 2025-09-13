@@ -1,5 +1,5 @@
 body{
-background-color: #252121;
+background-color: #000000;
 }
 
 
@@ -94,11 +94,11 @@ no de baixo e acima desse comentario
     font-size: 35px;
     justify-content: center; /*centraliza vertical*/
     align-items: center; /*centraliza horizontal*/
-    border-radius: 18px;
+    border-radius: 75px;
     text-align: center;
     transform: rotate(3deg); /*inclina a div 3 graus para a direita*/
     z-index: 2;
-    /*COLOCAR UMA SOMBRA EM BAIXO DA DIV!!!*/
+    box-shadow: 1px 1px 150px rgb(255, 21, 21);
 }
 
 .texto-s-inc {
@@ -149,9 +149,34 @@ no de baixo e acima desse comentario
     margin-top: -130px;  /* Valor negativo move o botão para cima, e positivo para baixo*/
 }
 
-/*arrumar a porra do card, centralizar essa merda, e fazer ficar responsivo essa desgraça*/
+.planos-btn {
+    background: linear-gradient(45deg, #571b1b, #f70101);
+    color: #fff;
+    border-radius: 12px;
+    padding: 10px 20px; /* padding interno */
+    font-weight: bold;
+    transition: 0.3s ease;
+}
 
+.planos-btn:hover {
+    background-color: white;
+    color: #000;
+    transition: 0.3s ease;
+    background: linear-gradient(45deg, #060e33, #3685fc);
+}
 
+.cards-coluna {
+
+}
+
+.card-vantagens {
+    border-radius: 50px;
+}
+
+.gif-sapos {
+    display: flex;
+    justify-content: center;
+}
 
 footer {
     background-color: #000;
