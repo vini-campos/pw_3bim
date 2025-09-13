@@ -1,5 +1,5 @@
 body{
-background-color: #000;
+background-color: #252121;
 }
 
 
@@ -46,13 +46,8 @@ no de baixo e acima desse comentario
 }
 
 .wallpaper-fundo {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
+    height: 900px;
+    background-repeat: no-repeat;
 }
 
 .wallpaper-fundo img {
@@ -84,6 +79,79 @@ no de baixo e acima desse comentario
     left: 406px;
     flex-direction: column;
 }
+
+ main {
+    margin-top: -100px; /*puxa o card para cima por causa do valor negativo*/
+    position: relative; /*permite usar o z-index*/
+    z-index: 2; /*faz o card ficar em cida do wallpaper*/
+ }
+
+.card-texto {
+    width: 999px;
+    height: 350px;
+    background-color: rgb(85, 16, 16);
+    display: flex;
+    font-size: 35px;
+    justify-content: center; /*centraliza vertical*/
+    align-items: center; /*centraliza horizontal*/
+    border-radius: 18px;
+    text-align: center;
+    transform: rotate(3deg); /*inclina a div 3 graus para a direita*/
+    z-index: 2;
+    /*COLOCAR UMA SOMBRA EM BAIXO DA DIV!!!*/
+}
+
+.texto-s-inc {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    transform: rotate(-3deg); /*impede de que o texto fique 3 graus a direita igual a div card-texto*/
+    z-index: 2;
+}
+
+.card-borda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.oferta-plano {
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -100px;
+}
+
+.card-oferta {
+    width: 999px;
+    height: 350px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /*alinha verticalmente o texto*/
+}
+
+.texto-oferta {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+.btn-planos {
+    display: flex;
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center;
+    position: relative;
+    margin-top: -130px;  /* Valor negativo move o botão para cima, e positivo para baixo*/
+}
+
+/*arrumar a porra do card, centralizar essa merda, e fazer ficar responsivo essa desgraça*/
+
+
 
 footer {
     background-color: #000;
