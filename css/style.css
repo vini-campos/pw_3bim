@@ -147,11 +147,12 @@ no de baixo e acima desse comentario
     align-items: center;
     position: relative;
     margin-top: -130px;  /* Valor negativo move o botão para cima, e positivo para baixo*/
+    margin-bottom: 350px;
 }
 
 .planos-btn {
-    background: linear-gradient(45deg, #571b1b, #f70101);
     color: #fff;
+    background-color: #5e1010;
     border-radius: 12px;
     padding: 10px 20px; /* padding interno */
     font-weight: bold;
@@ -159,24 +160,75 @@ no de baixo e acima desse comentario
 }
 
 .planos-btn:hover {
-    background-color: white;
-    color: #000;
+    background-color: rgb(253, 37, 37);
+    color: #fff;
     transition: 0.3s ease;
-    background: linear-gradient(45deg, #060e33, #3685fc);
 }
 
 .cards-coluna {
-
+    background-color: #5e1010;
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-radius: 25px;
+    gap: 75px;
 }
+/*colocar a imagem da redstone como fundo*/
 
 .card-vantagens {
-    border-radius: 50px;
+    min-height: 250px;
+    border-radius: 20px;
+    border: #000;
+    background-color: rgba(255, 0, 0, 0);
+    box-shadow: 1px 15px 25px rgb(44, 1, 1);
+}
+
+.card-vantagens .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centraliza verticalmente */
+    align-items: center;     /* centraliza horizontalmente */
+}
+
+.texto-card {
+    color: #fff;
 }
 
 .gif-sapos {
     display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
     justify-content: center;
 }
+
+.gif-sapos img {
+    width: 900px;
+    height: auto;
+}
+
+/*
+
+.painel-direito-esquerdo {
+    padding-top: 150px;
+    display: flex;
+    width: 100%;
+}
+
+.titulo-card-es {
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    background-color: rgb(57, 15, 92);
+}
+
+.titulo-card-di {
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    background-color: rgb(52, 90, 13);
+}
+
+*/
 
 footer {
     background-color: #000;

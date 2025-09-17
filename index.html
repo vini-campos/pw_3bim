@@ -22,11 +22,15 @@
                     class="d-inline-block align-text-top me-2">
                 Redstone Cloud
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <!-- Botão do menu offcanvas, só aparece em telas pequenas -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <img src="img/icon_menu.png" alt="ícone de menu">
+                </span>
             </button>
-            <div class="collapse navbar-collapse ms-5" id="navbarScroll">
+            <!-- Menu normal para telas grandes -->
+            <div class="collapse navbar-collapse ms-5 d-none d-lg-flex" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Hospedagem</a>
@@ -81,11 +85,12 @@
     <main>
         <div class="card-borda">
             <div class="card-texto">
-                <p class="texto-s-inc">Cuidamos de tudo para que você <br>tenha uma experiência incrível<br>com sua host de Minecraft.</p>
+                <p class="texto-s-inc">Cuidamos de tudo para que você <br>tenha uma experiência incrível<br>com sua host
+                    de Minecraft.</p>
             </div>
         </div>
 
-        <div class="numsei">
+        <div class="plano-texto">
             <div class="oferta-plano">
                 <div class="card-oferta">
                     <p class="texto-oferta">Os melhores planos para<br>seu servidor de Minecraft.</p>
@@ -98,17 +103,67 @@
             </div>
         </div>
 
-        <div class="cards-coluna container mt-5">
+        <!--cards do bootstap-->
+        <div class="cards-coluna container mt-5 d-flex justify-content-center">
             <div class="card card-vantagens" style="width: 270px;">
-                <div class="card-body card-nsei">
-                    <h5 class="card-title">Garantia incondicional</h5>
-                    <p class="card-text">Confiamos em nosso serviço <br> e, para provar, caso não se <br> sinta satisfeito durante os <br> primeiros 7 dias, <br> reembolsaremos todo o <br> valor pago. Sem burocracia. <br> Basta chamar no chat.</p>
+                <div class="card-body text-center">
+                    <h5 class="texto-card">Garantia incondicional</h5>
+                    <p class="texto-card">Confiamos em nosso serviço <br> e, para provar, caso não se <br> sinta
+                        satisfeito durante os <br> primeiros 7 dias, <br> reembolsaremos todo o <br> valor pago. Sem
+                        burocracia. <br> Basta chamar no chat.</p>
+                </div>
+            </div>
+            <div class="card card-vantagens" style="width: 270px;">
+                <div class="card-body text-center">
+                    <h5 class="texto-card">Proteção DDoS inclusa</h5>
+                    <p class="texto-card">Utilizamos a rede da <br> Cloudflare, com mais de <br> 90Tbps de capacidade, para <br> absorver qualquer ataque.</p>
+                </div>
+            </div>
+            <div class="card card-vantagens" style="width: 270px;">
+                <div class="card-body text-center">
+                    <h5 class="texto-card">Cuidamos dos seus dados</h5>
+                    <p class="texto-card">Levamos a segurança e <br> proteção de dados muito a <br> sério. Tomamos medidas <br> constantes para garantir a <br> segurança da informação e <br> a proteção dos seus dados.</p>
                 </div>
             </div>
         </div>
 
         <div class="gif-sapos mt-5">
             <img src="img/gif_sapos_minecraft.gif" alt="animação de sapos andando do jogo eletrônico minecraft">
+        </div>
+
+        <div class="cards-coluna container mt-5 d-flex justify-content-center">
+            <div class="card card-vantagens" style="width: 270px;">
+                <div class="card-body text-center">
+                    <h5 class="texto-card">Atendimento humano</h5>
+                    <p class="texto-card">Estamos prontos para te <br> ajudar e garantir sua melhor <br> experiência com host de <br> Minecraft.</p>
+                </div>
+            </div>
+            <div class="card card-vantagens" style="width: 270px;">
+                <div class="card-body text-center">
+                    <h5 class="texto-card">Liberdade Total</h5>
+                    <p class="texto-card">Instale mods, plugins e <br> personalize seu servidor <br> do jeito que quiser, sem <br> limites.</p>
+                </div>
+            </div>
+            <div class="card card-vantagens" style="width: 270px;">
+                <div class="card-body text-center">
+                    <h5 class="texto-card">Desempenho Garantido</h5>
+                    <p class="texto-card">Jogue sem travamentos, com <br> servidores otimizados e recursos <br> dedicados para sua experiência <br> no Minecraft.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="painel-direito-esquerdo">
+            <div class="painel-esquerdo">
+                <div class="texto-painel-esquerdo">
+                    <p class="titulo-card-es">+100.000</p>
+                </div>
+            </div>
+
+            <div class="painel-di">
+                <div class="texto-painel-direito">
+                    <p class="titulo-card-di">+80.000</p>
+                </div>
+            </div>
         </div>
 
     </main>
