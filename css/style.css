@@ -173,7 +173,6 @@ no de baixo e acima desse comentario
     border-radius: 25px;
     gap: 75px;
 }
-/*colocar a imagem da redstone como fundo*/
 
 .card-vantagens {
     min-height: 250px;
@@ -196,39 +195,85 @@ no de baixo e acima desse comentario
 
 .gif-sapos {
     display: flex;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 65px;
+    padding-bottom: 65px;
     justify-content: center;
 }
 
 .gif-sapos img {
-    width: 900px;
+    width: 800px;
     height: auto;
 }
 
-/*
-
 .painel-direito-esquerdo {
-    padding-top: 150px;
     display: flex;
-    width: 100%;
+    padding-top: 250px;
 }
 
-.titulo-card-es {
+.painel-esquerdo, .painel-direito {
+    flex: 1; /*faz ocupar todo o espaço disponível*/
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 150px;
-    background-color: rgb(57, 15, 92);
+    height: 500px; /* ajuste conforme necessário */
+    position: relative;
 }
 
-.titulo-card-di {
-    justify-content: center;
+.painel-esquerdo {
+    background: linear-gradient(90deg, #740909  0%, #FF3C00 100%);
+ }
+
+.painel-direito {
+    background: linear-gradient(90deg, #FF3C00 0%, #49116b 100%);
+ }
+
+.conteudo-painel {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    font-size: 150px;
-    background-color: rgb(52, 90, 13);
+    justify-content: center;
 }
 
-*/
+.painel-numero {
+    font-family: 'Orbitron', Arial, sans-serif;
+    font-size: 120px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.painel-legenda {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 36px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.melhores-precos {
+    padding-top: 650px;
+    padding-bottom: 650px;
+    display: block;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.melhor-preco-titulo {
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(160, 33, 33);
+    padding-bottom: 20px;
+}
+
+.melhor-preco-texto {
+    font-size: 27px;
+    color: white;
+}
+
+.fundo-texto {
+    border: 1px solid #f50505;
+    padding: 20px;
+    border-radius: 10px;
+}
 
 footer {
     background-color: #000;
