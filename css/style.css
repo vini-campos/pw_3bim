@@ -21,12 +21,6 @@ background-color: #000000;
     transition: color 0.3s ease;
 }
 
-/*
-não sei como usar uma classe prória nesse elemento,
-por isso ainda ta com o nome generico
-no de baixo e acima desse comentario
-*/
-
 .navbar .nav-link:hover {
   color: #ff0000;
 }
@@ -94,7 +88,7 @@ no de baixo e acima desse comentario
     font-size: 35px;
     justify-content: center; /*centraliza vertical*/
     align-items: center; /*centraliza horizontal*/
-    border-radius: 75px;
+    border-radius: 35px;
     text-align: center;
     transform: rotate(3deg); /*inclina a div 3 graus para a direita*/
     z-index: 2;
@@ -105,7 +99,7 @@ no de baixo e acima desse comentario
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ffffff;
-    transform: rotate(-3deg); /*impede de que o texto fique 3 graus a direita igual a div card-texto*/
+     /*impede de que o texto fique 3 graus a direita igual a div card-texto*/
     z-index: 2;
 }
 
@@ -114,6 +108,11 @@ no de baixo e acima desse comentario
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+
+.card-body {
+    background-color: #6d0000;
+    border-radius: 25px;
 }
 
 .oferta-plano {
@@ -166,7 +165,7 @@ no de baixo e acima desse comentario
 }
 
 .cards-coluna {
-    background-color: #5e1010;
+    background: linear-gradient(90deg, #972d0d 25%, #49116b 90%);
     position: relative;
     padding-top: 70px;
     padding-bottom: 70px;
@@ -179,7 +178,7 @@ no de baixo e acima desse comentario
     border-radius: 20px;
     border: #000;
     background-color: rgba(255, 0, 0, 0);
-    box-shadow: 1px 15px 25px rgb(44, 1, 1);
+    box-shadow: 1px 20px 50px rgb(2, 2, 2);
 }
 
 .card-vantagens .card-body {
@@ -249,8 +248,8 @@ no de baixo e acima desse comentario
 }
 
 .melhores-precos {
-    padding-top: 650px;
-    padding-bottom: 650px;
+    padding-top: 550px;
+    padding-bottom: 350px;
     display: block;
     width: 600px;
     margin-left: auto;
@@ -260,7 +259,7 @@ no de baixo e acima desse comentario
 .melhor-preco-titulo {
     font-weight: bold;
     font-size: 35px;
-    color: rgb(160, 33, 33);
+    color: rgb(255, 255, 255);
     padding-bottom: 20px;
 }
 
@@ -270,14 +269,40 @@ no de baixo e acima desse comentario
 }
 
 .fundo-texto {
-    border: 1px solid #f50505;
+    background: none;
     padding: 20px;
     border-radius: 10px;
+}
+
+.botao-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px; 
+}
+
+.btn-planos-abaixo {
+    display: flex;
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center;
+    position: relative;
 }
 
 footer {
     background-color: #000;
     padding: 45px;
+}
+
+.mobs-gif {
+    position: relative;
+    top: 60px;
+    left: 30px;
+}
+
+.mobs-gif img {
+    width: 100px;
+    height: auto;
 }
 
 .redes-sociais {
@@ -297,3 +322,102 @@ footer {
     transition: 0.4s ease;
     transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+    .texto-principal-container {
+        white-space: nowrap; /*impede a quebra de linha*/
+        font-size: 50px;
+        top: 45px;
+        left: 90px;
+        width: 100px;
+        position: absolute;
+        margin-top: 200px;
+    }
+
+    .subtitulo {
+        font-size: 25px;
+        left: 50px;
+        width: 600px;
+        position: absolute;
+        margin-top: -160px;
+    }
+
+    .card-texto,
+    .card-oferta,
+    .melhores-precos {
+        width: 500px;
+        font-size: 35px;
+        padding: 60px 20px; /* padding interno */
+    }
+
+    .card-texto{
+        box-shadow: 1px 1px 90px rgb(255, 21, 21);
+    }
+
+    .painel-direito-esquerdo {
+        flex-direction: column;
+        padding-top: 130px;
+    }
+
+    .painel-esquerdo, .painel-direito {
+        width: 600px;
+        height: 220px;
+    }
+
+    .painel-esquerdo {
+        background: linear-gradient(135deg, #ff0000, #ff6600);
+        
+    }
+
+    .painel-direito {
+       background: linear-gradient(135deg, #ff0000, #ff1493);
+    }
+
+    .painel-numero {
+        font-size: 55px;
+    }
+
+    .painel-legenda {
+        font-size: 30px;
+    }
+
+    .cards-coluna {
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        background: linear-gradient(180deg, #972d0d 25%, #49116b 90%);
+    }
+
+    .card-vantagens {
+        max-width: 300px;
+        margin-left: auto; /*centraliza automaticamente*/
+        margin-right: auto;
+    }
+
+    .gif-sapos img {
+        width: 600px;
+    }
+
+    .footer {
+        padding: 75px 20px;
+    }
+
+    .redes-sociais img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .mobs-gif {
+        position: relative;
+        top: 35px;
+        left: 10px;
+    }
+
+    .mobs-gif img {
+        width: 55px;
+        height: auto;
+    }
+
+}
+

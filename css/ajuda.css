@@ -1,0 +1,79 @@
+.wallpaper-fundo {
+    height: 900px;
+    background-repeat: no-repeat;
+}
+
+.wallpaper-fundo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mensagem-ajuda-container {
+    color: #ffffff;
+    position: absolute;
+    border-radius: 10px;
+    padding: 30px;
+    top: 300px;
+    left: 425px;
+}
+
+.titulo-ajuda {
+    text-shadow: 0px 0px 60px #c4692d;
+    font-size:70px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.texto-ajuda {
+    font-size: 30px;
+    text-shadow: 0px 0px 60px #c4692d;
+}
+
+.btn.planos-btn {
+    position: relative;
+    top: -200px;
+}
+
+.container-toast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toast {
+    border-left: 5px solid #dc3545; /* destaque vermelho */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.toast-body {
+    font-weight: 500;
+}
+
+.toast-header {
+    font-size: 14px;
+}
+
+.toast-header img {
+   width: 35px;
+   height: 35px;
+}
+
+@media (max-width: 768px) {
+    .mensagem-ajuda-container {
+        top: 150px;
+        left: 50px;
+        right: 50px;
+        padding: 20px;
+    }
+
+    .titulo-ajuda {
+        font-size: 45px;
+    }
+
+    .texto-ajuda {
+        font-size: 25px;
+    }
+    
+}

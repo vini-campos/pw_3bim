@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/ecabda1337491b7.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adqservers.css">
     <title>Adquirir servidor</title>
 </head>
 
@@ -30,10 +32,10 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Hospedagem</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Serviços</a>
+                        <a class="nav-link" href="adqservers.html">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Parceiros</a>
+                        <a class="nav-link" href="membros.html">Parceiros</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -41,8 +43,8 @@
                             Mais
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Notícias</a></li>
-                            <li><a class="dropdown-item" href="#">Planos</a></li>
+                            <li><a class="dropdown-item" href="noticias.html">Notícias</a></li>
+                            <li><a class="dropdown-item" href="planos.html">Planos</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -51,7 +53,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ajuda</a>
+                        <a class="nav-link" href="ajuda.html">Ajuda</a>
                     </li>
                 </ul>
                 <a href="formulario.html" class="nav-item btn btn-danger rounded-pill">Login</a>
@@ -59,8 +61,139 @@
         </div>
     </nav>
 
+    <div class="wallpaper-fundo">
+        <!-- Texto de fundo -->
+        <div class="texto-fundo-container">
+            <div class="moeda-fundo">
+                <img src="img/moeda.svg" alt="imagem de uma moeda">
+            </div>
+            <p class="texto-fundo-titulo text-center">A forma mais fácil de criar o seu <br> servidor de Minecraft</p>
+            <p class="texto-fundo-descricao text-center">Sem adivinhação, escolha o plano perfeito para você e seus
+                amigos.</p>
+        </div>
+    </div>
+
+    <!--Main-->
+    <main>
+        <div class="container d-flex flex-column align-items-center">
+            <div class="texto-escolha-servidor text-center mt-5 mb-4">
+                <h2 class="texto-servidor">Escolha o seu servidor</h2>
+            </div>
+
+            <div class="container d-flex flex-wrap justify-content-center">
+                <div class="card-servers ">
+                    <img src="img/machado_minecraft.gif" alt="Minecraft" class="imagem-card">
+
+                    <div class="conteudo-card">
+                        <h5 class="titulo-card">Plano SMP</h5>
+                        <p class="preco-card">R$ 29,16 / mês</p>
+
+                        <ul class="card-lista">
+                            <li>Recomendado para 4 jogadores</li>
+                            <li>Processamento padrão</li>
+                            <li>Até 3GB RAM</li>
+                        </ul>
+
+                        <div class="btn-criar-servidor">
+                            <a href="formulario.html"><
+                                <button class="btn planos-btn mt-2 mb-3">Criar servidor</button>
+                            </a>
+                        </div>
+
+                        <div class="baixo-card">
+                            <img src="img/quebra_cabeca.png" alt="Sem mods" class="card-icone">
+                            <p>Sem mods e plugins</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-servers">
+                    <img src="img/ataque_minecraft.gif" alt="Minecraft" class="imagem-card">
+
+                    <div class="conteudo-card">
+                        <h5 class="titulo-card">Plano SMP+</h5>
+                        <p class="preco-card">R$ 44,93 / mês</p>
+
+                        <ul class="card-lista">
+                            <li>Recomendado para 8 jogadores</li>
+                            <li>Processamento padrão</li>
+                            <li>RAM ilimitada</li>
+                        </ul>
+
+                        <div class="btn-criar-servidor">
+                            <a href="formulario.html"><
+                                <button class="btn planos-btn mt-2 mb-3">Criar servidor</button>
+                            </a>
+                        </div>
+
+                        <div class="baixo-card">
+                            <img src="img/quebra_cabeca.png" alt="Sem mods" class="card-icone">
+                            <p>Até 10 mods e plugins</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-servers">
+                    <img src="img/steve_correndo.gif" alt="Minecraft" class="imagem-card">
+
+                    <div class="conteudo-card">
+                        <h5 class="titulo-card">Plano Pro</h5>
+                        <p class="preco-card">R$ 63,48 / mês</p>
+
+                        <!--adicionar badge de mais popular-->
+
+                        <ul class="card-lista">
+                            <li>Recomendado para 16 jogadores</li>
+                            <li>Processamento avançado</li>
+                            <li>RAM ilimitada</li>
+                        </ul>
+
+                        <div class="btn-criar-servidor">
+                            <a href="formulario.html"><
+                                <button class="btn planos-btn mt-2 mb-3">Criar servidor</button>
+                            </a>
+                        </div>
+
+                        <div class="baixo-card">
+                            <img src="img/quebra_cabeca.png" alt="Sem mods" class="card-icone">
+                            <p>Mods e plugins ilimitados</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-servers">
+                    <img src="img/minecraft_camara_julgamento.gif" alt="Minecraft" class="imagem-card">
+
+                    <div class="conteudo-card">
+                        <h5 class="titulo-card">Plano Premium</h5>
+                        <p class="preco-card">R$ 99,90 / mês</p>
+
+                        <ul class="card-lista">
+                            <li>Recomendado p/ muitos jogadores</li>
+                            <li>Processamento extremo</li>
+                            <li>RAM ilimitada</li>
+                        </ul>
+
+                        <div class="btn-criar-servidor">
+                            <a href="formulario.html"><
+                                <button class="btn planos-btn mt-2 mb-3">Criar servidor</button>
+                            </a>
+                        </div>
+
+                        <div class="baixo-card">
+                            <img src="img/quebra_cabeca.png" alt="Sem mods" class="card-icone">
+                            <p>mods e plugins ilimitados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <!--Footer-->
-    <footer class="footer text-white">
+    <footer class="footer text-white mt-5">
+
+        <div class="mobs-gif">
+            <img src="img/mobs_minecraft.gif" alt="animação de mobs do jogo eletrônico minecraft">
+        </div>
+
         <div class="redes-sociais">
             <a
                 href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwig29LwptGPAxVfq5UCHb-PE6YQFnoECBwQAQ&url=https%3A%2F%2Fworkspace.google.com%2Fintl%2Fpt-BR%2Fgmail%2F&usg=AOvVaw1MwkeXgAMvW8yty2qMhFps&opi=89978449">

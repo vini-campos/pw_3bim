@@ -22,24 +22,20 @@
                     class="d-inline-block align-text-top me-2">
                 Redstone Cloud
             </a>
-            <!-- Botão do menu offcanvas, só aparece em telas pequenas -->
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <img src="img/icon_menu.png" alt="ícone de menu">
-                </span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Menu normal para telas grandes -->
-            <div class="collapse navbar-collapse ms-5 d-none d-lg-flex" id="navbarScroll">
+            <div class="collapse navbar-collapse ms-5" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Hospedagem</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Serviços</a>
+                        <a class="nav-link" href="adqservers.html">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Parceiros</a>
+                        <a class="nav-link" href="membros.html">Parceiros</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -47,8 +43,8 @@
                             Mais
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Notícias</a></li>
-                            <li><a class="dropdown-item" href="#">Planos</a></li>
+                            <li><a class="dropdown-item" href="noticias.html">Notícias</a></li>
+                            <li><a class="dropdown-item" href="planos.html">Planos</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -57,7 +53,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ajuda</a>
+                        <a class="nav-link" href="ajuda.html">Ajuda</a>
                     </li>
                 </ul>
                 <a href="formulario.html" class="nav-item btn btn-danger rounded-pill">Login</a>
@@ -116,13 +112,16 @@
             <div class="card card-vantagens" style="width: 270px;">
                 <div class="card-body text-center">
                     <h5 class="texto-card">Proteção DDoS inclusa</h5>
-                    <p class="texto-card">Utilizamos a rede da <br> Cloudflare, com mais de <br> 90Tbps de capacidade, para <br> absorver qualquer ataque.</p>
+                    <p class="texto-card">Utilizamos a rede da <br> Cloudflare, com mais de <br> 90Tbps de capacidade,
+                        para <br> absorver qualquer ataque.</p>
                 </div>
             </div>
             <div class="card card-vantagens" style="width: 270px;">
                 <div class="card-body text-center">
                     <h5 class="texto-card">Cuidamos dos seus dados</h5>
-                    <p class="texto-card">Levamos a segurança e <br> proteção de dados muito a <br> sério. Tomamos medidas <br> constantes para garantir a <br> segurança da informação e <br> a proteção dos seus dados.</p>
+                    <p class="texto-card">Levamos a segurança e <br> proteção de dados muito a <br> sério. Tomamos
+                        medidas <br> constantes para garantir a <br> segurança da informação e <br> a proteção dos seus
+                        dados.</p>
                 </div>
             </div>
         </div>
@@ -135,19 +134,22 @@
             <div class="card card-vantagens" style="width: 270px;">
                 <div class="card-body text-center">
                     <h5 class="texto-card">Atendimento humano</h5>
-                    <p class="texto-card">Estamos prontos para te <br> ajudar e garantir sua melhor <br> experiência com host de <br> Minecraft.</p>
+                    <p class="texto-card">Estamos prontos para te <br> ajudar e garantir sua melhor <br> experiência com
+                        host de <br> Minecraft.</p>
                 </div>
             </div>
             <div class="card card-vantagens" style="width: 270px;">
                 <div class="card-body text-center">
                     <h5 class="texto-card">Liberdade Total</h5>
-                    <p class="texto-card">Instale mods, plugins e <br> personalize seu servidor <br> do jeito que quiser, sem <br> limites.</p>
+                    <p class="texto-card">Instale mods, plugins e <br> personalize seu servidor <br> do jeito que
+                        quiser, sem <br> limites.</p>
                 </div>
             </div>
             <div class="card card-vantagens" style="width: 270px;">
                 <div class="card-body text-center">
                     <h5 class="texto-card">Desempenho Garantido</h5>
-                    <p class="texto-card">Jogue sem travamentos, com <br> servidores otimizados e recursos <br> dedicados para sua experiência <br> no Minecraft.</p>
+                    <p class="texto-card">Jogue sem travamentos, com <br> servidores otimizados e recursos <br>
+                        dedicados para sua experiência <br> no Minecraft.</p>
                 </div>
             </div>
         </div>
@@ -171,14 +173,32 @@
         <div class="melhores-precos text-center">
             <div class="fundo-texto">
                 <p class="melhor-preco-titulo">Os melhores preços</p>
-                <p class="melhor-preco-texto">Oferecemos o melhor serviço pelo melhor preço, atingindo o melhor custo-benefício do mercado.</p>        
-              </div>
+                <p class="melhor-preco-texto">Oferecemos o melhor serviço pelo melhor preço, atingindo o melhor
+                    custo-benefício do mercado.</p>
+            </div>
+            <div class="botao-2">
+                <div class=" btn btn-planos-abaixo">
+                    <a href="planos.html">
+                        <button class="btn planos-btn">Encontrar plano</button>
+                    </a>
+                </div>
+                <div class="btn btn-duvidas">
+                    <a href="ajuda.html">
+                        <button class="btn planos-btn">Ainda com dúvidas?</button>
+                    </a>
+                </div>
+            </div>
         </div>
 
     </main>
 
     <!--Footer-->
     <footer class="footer text-white"> <!--text-white == texto branco "é do bootstrap"-->
+
+        <div class="mobs-gif">
+            <img src="img/mobs_minecraft.gif" alt="animação de mobs do jogo eletrônico minecraft">
+        </div>
+
         <div class="redes-sociais">
             <a
                 href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwig29LwptGPAxVfq5UCHb-PE6YQFnoECBwQAQ&url=https%3A%2F%2Fworkspace.google.com%2Fintl%2Fpt-BR%2Fgmail%2F&usg=AOvVaw1MwkeXgAMvW8yty2qMhFps&opi=89978449">
