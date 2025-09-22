@@ -15,7 +15,7 @@
     border-radius: 10px;
     padding: 30px;
     top: 300px;
-    left: 425px;
+    left: 360px;
 }
 
 .titulo-ajuda {
@@ -30,9 +30,26 @@
     text-shadow: 0px 0px 60px #c4692d;
 }
 
-.btn.planos-btn {
-    position: relative;
-    top: -200px;
+.btn-texto-planos {
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+
+.btn-plan {
+    color: #fff;
+    background-color: #c01b1b;
+    border-radius: 12px;
+    padding: 10px 20px; /* padding interno */
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn-plan:hover {
+    background-color: #8d1b1b;
+    transform: scale(1.05);
+    text-decoration: none;
+    color: #fff;
 }
 
 .container-toast {
@@ -42,7 +59,7 @@
 }
 
 .toast {
-    border-left: 5px solid #dc3545; /* destaque vermelho */
+    border-left: 5px solid #dc3545;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -60,6 +77,24 @@
    height: 35px;
 }
 
+@media (max-width: 1670px) {
+    .mensagem-ajuda-container {
+        top: 250px;
+        left: 200px;
+        right: 200px;
+        padding: 25px;
+    }
+
+    .titulo-ajuda {
+        font-size: 60px;
+    }
+
+    .texto-ajuda {
+        font-size: 28px;
+    }
+    
+}
+
 @media (max-width: 768px) {
     .mensagem-ajuda-container {
         top: 150px;
@@ -75,5 +110,4 @@
     .texto-ajuda {
         font-size: 25px;
     }
-    
 }

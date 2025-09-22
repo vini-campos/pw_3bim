@@ -23,15 +23,16 @@
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="img/icon_menu.png" alt="ícone de menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse ms-5" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <div class="collapse navbar-collapse ms-2" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 1000px;">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Hospedagem</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="adqservers.html>Serviços</a>
+                        <a class="nav-link" href="adqservers.html">Serviços</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="membros.html">Parceiros</a>
@@ -67,14 +68,19 @@
 
     <div class="mensagem-ajuda-container text-center">
         <h1 class="titulo-ajuda">Precisa de ajuda?</h1>
-        <p class="texto-ajuda">Estamos aqui para ajudar! Se você tiver alguma dúvida <br> ou precisar de suporte,
-            entre em contato conosco através de nosso email.</p>
+        <p class="texto-ajuda">
+            Estamos aqui para ajudar! Se você tiver alguma dúvida <br>
+            ou precisar de suporte, entre em contato conosco através de nosso email.
+        </p>
+        <div class="btn-texto-planos">
+            <button type="button" class="btn btn-plan shadow-none mt-3" id="liveToastBtn">
+                Entrar em contato
+            </button>
+        </div>
     </div>
 
     <main>
         <div class="container-toast text-center mb-5">
-            <button type="button" class="btn planos-btn" id="liveToastBtn">Entrar em contato</button>
-
             <div class="toast-container position-fixed bottom-0 end-0 p-3">
                 <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                     <div class="toast-header">
@@ -95,7 +101,7 @@
     <!--Footer-->
     <footer class="footer text-white">
 
-         <div class="mobs-gif">
+        <div class="mobs-gif">
             <img src="img/mobs_minecraft.gif" alt="animação de mobs do jogo eletrônico minecraft">
         </div>
 

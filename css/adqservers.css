@@ -13,7 +13,7 @@
 .moeda-fundo {
     position: absolute;
     top: 200px;
-    left: 800px;  
+    left: 550px;  
     background-size: cover;
 }
 
@@ -98,6 +98,22 @@
     text-decoration: none;
 }
 
+.escolher-planos-btn {
+    color: #fff;
+    background-color: #571483;
+    border-radius: 12px;
+    padding: 10px 20px; /* padding interno */
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.escolher-planos-btn:hover {
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
 .baixo-card {
   display: flex;
   flex-direction: column;
@@ -112,22 +128,66 @@
 
 @media (max-width: 768px) {
 
-    .texto-fundo-titulo {
-        font-size: 40px;
-        padding-top: 300px;
-        text-align: center;
+  .texto-fundo-titulo {
+      font-size: 40px;
+      padding-top: 300px;
+      text-align: center;
     }
 
-    .texto-fundo-descricao {
-        font-size: 25px;
-        text-align: center;
+  .texto-fundo-descricao {
+      font-size: 25px;
+      text-align: center;
     }
 
-    .moeda-fundo {
-        top: 160px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 150px; /* Ajuste o tamanho conforme necessário */
-        height: auto; /* Mantém a proporção da imagem */
+  .moeda-fundo {
+      top: 160px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: auto; /* Mantém a proporção*/
+    }
+}
+
+@media (max-width: 868px){
+
+  .texto-fundo-titulo {
+      font-size: 45px;
+      padding-top: 300px;
+      text-align: center;
+  }
+
+  .texto-fundo-descricao {
+      font-size: 35px;
+      text-align: center;
+    }
+
+  .moeda-fundo {
+      top: 160px;
+      left: 280px;
+      width: 150px;
+      height: auto; /* Mantém a proporção*/
+    }
+
+} 
+
+@media (max-width: 480px) {
+
+  .texto-fundo-titulo {
+      font-size: 35px;
+      padding-top: 250px;
+      text-align: center;
+    }
+
+  .texto-fundo-descricao {
+      font-size: 25px;
+      padding-top: 75px;
+      text-align: center;
+    }
+
+  .moeda-fundo {
+      top: 130px;
+      left: 190px;
+      width: 120px;
+      height: auto; /* Mantém a proporção*/
     }
 }
