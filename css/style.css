@@ -129,6 +129,10 @@ background-color: #000000;
     border-radius: 25px;
 }
 
+.card, .card-vantagens {
+    width: 270px;
+}
+
 .oferta-plano {
     padding-top: 250px;
     display: flex;
