@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(36, 32, 31);
+    height: 100%;
+}
+.centralDiv {
+    margin-top: 100px;
+    display: flex;             
+    justify-content: center;   /*alinha X*/
+    align-items: center;       /*alinha Y*/
+}
+.formdiv{
+
+    width: 600px;
+    padding: 5px;
+    margin-top: 100PX;
+    max-width: 600px;
+}
+.wallpaper-fundo {
+    height: 900px;
+    background: url("img/wallpaper_minecraft.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative; /* faz com que o texto fique dentro do conteudo */
+}
+.texto-fundo-container {
+    position: relative;
+    z-index: 2; /* fica acima do background */
+}
+legend{
+    color: aliceblue;
+}
+label{
+    color: rgb(196, 195, 204);
+}
+.texto-fundo-container {
+    position: relative;
+    z-index: 2; /* fica acima do background */
+}  
