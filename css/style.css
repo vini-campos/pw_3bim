@@ -48,11 +48,14 @@ background-color: #000000;
     background-repeat: no-repeat;
 }
 
-.wallpaper-fundo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.wallpaper-fundo {
+    height: 900px;
+    background: url("../img/nether_wallpaper_grad.png") no-repeat center center;
+    background-size: cover;
+    position: relative; /* faz com que o texto fique dentro do contexto */
 }
+
+
 
 .texto-principal-container,
 .subtitulo {
@@ -61,6 +64,7 @@ background-color: #000000;
     left: auto;
     margin: 0 auto;
     text-align: center;
+    z-index: 2;
 }
 
 
@@ -163,7 +167,7 @@ background-color: #000000;
     justify-content: center; /* Alinhamento horizontal */
     align-items: center;
     position: relative;
-    margin-top: -130px;  /* Valor negativo move o botão para cima, e positivo para baixo*/
+    margin-top: -100px;  /* Valor negativo move o botão para cima, e positivo para baixo*/
     margin-bottom: 350px;
 }
 

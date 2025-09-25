@@ -1,8 +1,8 @@
 .wallpaper-fundo {
     height: 900px;
-    background: url("../img/wallpaper_minecraft.jpg") no-repeat center center;
+    background: url("../img/wallpaper_minecraft.jpg") no-repeat center;
     background-size: cover;
-    position: relative; /* garante que o texto fique dentro desse contexto */
+    position: relative; /* faz com que o texto fique dentro do contexto */
 }
 
 .texto-fundo-container {
