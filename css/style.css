@@ -4,7 +4,7 @@ background-color: #000000;
 
 
 .navbar-limit {
-    max-width: 60%;
+    max-width: 70%;
     background-color: rgba( 120, 20, 40, 0.20); /*52, 21, 57,*/
     border-radius: 10px;
 }
@@ -42,26 +42,25 @@ background-color: #000000;
 .dropdown-menu .dropdown-item:hover {
     color: #ffffff !important;
 }
-
+/*
 .wallpaper-fundo {
     height: 900px;
     background-repeat: no-repeat;
-}
+}*/
 
 .wallpaper-fundo {
     height: 900px;
     background: url("../img/nether_wallpaper_grad.png") no-repeat center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    position: relative; /* faz com que o texto fique dentro do contexto */
+    position: relative;
+    margin-bottom: 100px;/*só p desbugar a ultrapassagem do main por ele*/
 }
-
-
 
 .texto-principal-container,
 .subtitulo {
     position: relative;
     top: auto;
-    left: auto;
     margin: 0 auto;
     text-align: center;
     z-index: 2;
@@ -420,7 +419,7 @@ footer {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     .navbar-limit {
         position: relative;
@@ -429,7 +428,7 @@ footer {
 
     .navbar-limit {
         background-color: rgba(85, 14, 28, 0.623); /*52, 21, 57,*/
-}
+    }
 
     .texto-principal-container {
         font-size: 60px;
@@ -570,4 +569,9 @@ footer {
         background-color: rgb(253, 37, 37);
     }
 
+}
+@media (max-width: 400px) {
+    .redstone-text{
+        font-size: 15px;
+    }
 }

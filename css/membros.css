@@ -30,13 +30,7 @@
     font-size: 30px;
     font-family: 'Arial', Helvetica, sans-serif;
     text-align: center;
-}
-
-.btn-membros {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: -140px 0 200px 0;
+    margin-bottom: 100px;
 }
 
 .membros-card {
@@ -132,7 +126,6 @@
 .btn-parceiros {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     align-items: center;
 }
 

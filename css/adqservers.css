@@ -10,13 +10,6 @@
     z-index: 2; /* fica acima do background */
 }
 
-.moeda-fundo {
-    position: absolute;
-    top: 200px;
-    left: 550px;  
-    background-size: cover;
-}
-
 .texto-fundo-titulo {
     display: flex;
     align-items: center;
@@ -96,7 +89,6 @@
 .btn-criar-servidor a{
     color: transparent;
     text-decoration: none;
-    margin-left: 100px;
 }
 
 .escolher-planos-btn {
