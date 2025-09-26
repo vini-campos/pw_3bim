@@ -8,13 +8,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/ajuda.css">
-    <title>Ajuda</title>
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <title>Recuperar senha</title>
+
 </head>
+<style>
+    .wallpaper-fundo-recSenha {
+        width: 100%;
+        height: 900px;
+        background: url("img/trialChamber_wallpaper.png") no-repeat center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .formdiv {
+        margin-top: 50px;
+    }
+</style>
 
 <body>
-
-    <!--Navbar-->
     <nav class="navbar navbar-expand-lg bg-transparent fixed-top" style="background-color: transparent;">
         <div class="container navbar-limit">
             <a class="navbar-brand d-flex align-items-center redstone-text" href="#">
@@ -50,45 +63,49 @@
         </div>
     </nav>
 
-    <div class="wallpaper-fundo">
-        <img src="img/minecraft_jd_palido_wallpaper.jpg" alt="imagem do jogo eletrônico Minecraft"
-            class="wallpaper-img">
-    </div>
-
-    <div class="mensagem-ajuda-container text-center">
-        <h1 class="titulo-ajuda">Precisa de ajuda?</h1>
-        <p class="texto-ajuda">
-            Estamos aqui para ajudar! Se você tiver alguma dúvida <br>
-            ou precisar de suporte, entre em contato conosco através de nosso email.
-        </p>
-        <div class="btn-texto-planos">
-            <button type="button" class="btn btn-plan shadow-none mt-3" id="liveToastBtn">
-                Entrar em contato
-            </button>
-        </div>
-    </div>
-
     <main>
-        <div class="container-toast text-center mb-5">
-            <div class="toast-container position-fixed bottom-0 end-0 p-3">
-                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                    <div class="toast-header">
-                        <img src="img/carregando_gif.gif" class="rounded me-2" alt="gif carregando">
-                        <strong class="me-auto">Redstone Cloud</strong>
-                        <small>Agora</small>
-                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-                    <div class="toast-body">
-                        Estamos te redirecionando para a conversa com o suporte...
+        <div class="wallpaper-fundo-recSenha">
+            <div class="centralDiv">
+                <div class="formdiv">
+                    <div class="card shadow-lg rounded-4 formdiv" style="background-color: rgba(0, 0, 0, 0.705)">
+                        <form>
+                            <h3 style="color: rgb(255, 0, 0); text-align: center; font-size: 35px;">Recuperar senha</h3>
+
+                            <div class="row mb-3">
+                                <label for="Nome" class="col-sm-0 col-form-label">Nome Completo</label>
+                                <div class="col-sm-13">
+                                    <input type="Nome" class="form-control shadow-none" id="inputName" name="NomeComp"
+                                        placeholder="Seu Nome" required>
+                                </div>
+                            </div>
+
+
+                            <div class="row mb-3">
+                                <label for="Email" class="col-sm-0 col-form-label">Email</label>
+                                <div class="col-sm-13">
+                                    <input type="email" class="form-control shadow-none" id="inputEmail" name="email"
+                                        placeholder="seuemail123@gmail.com" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="validationCustomUsername" class="col-form-label">Nome de Usuário</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    <input type="text" class="form-control shadow-none" id="validationCustomUsername"
+                                        aria-describedby="inputGroupPrepend" name="Username"
+                                        placeholder="Escolha um Username">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-entrar w-100 mt-4">Enviar email</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-
     </main>
 
-    <!--Footer-->
-    <footer class="footer text-white">
+    <footer class="footer text-white mt-5">
 
         <div class="mobs-gif">
             <img src="img/mobs_minecraft.gif" alt="animação de mobs do jogo eletrônico minecraft">
@@ -115,7 +132,6 @@
     </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>

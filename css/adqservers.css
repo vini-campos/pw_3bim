@@ -96,6 +96,7 @@
 .btn-criar-servidor a{
     color: transparent;
     text-decoration: none;
+    margin-left: 100px;
 }
 
 .escolher-planos-btn {
@@ -162,7 +163,7 @@
     }
 
   .moeda-fundo {
-      top: 160px;
+      top: 150px;
       left: 280px;
       width: 150px;
       height: auto; /* Mantém a proporção*/
@@ -170,7 +171,7 @@
 
 } 
 
-@media (max-width: 480px) {
+@media (max-width: 420px) {
 
   .texto-fundo-titulo {
       font-size: 35px;
@@ -185,9 +186,9 @@
     }
 
   .moeda-fundo {
-      top: 130px;
-      left: 190px;
-      width: 120px;
+      top: 100px;
+      left: 160px;
+      width: 100px;
       height: auto; /* Mantém a proporção*/
     }
 }

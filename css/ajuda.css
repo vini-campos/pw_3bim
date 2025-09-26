@@ -1,6 +1,6 @@
 .wallpaper-fundo {
-    height: 900px;
-    background-repeat: no-repeat;
+    min-height: 600px;
+    position: relative;
 }
 
 .wallpaper-fundo img {
@@ -14,8 +14,12 @@
     position: absolute;
     border-radius: 10px;
     padding: 30px;
-    top: 300px;
-    left: 360px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /*alinha verticalmente e horizontalmente*/
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 100px; /* Adiciona espaço na parte de baixo */
 }
 
 .titulo-ajuda {
@@ -79,10 +83,12 @@
 
 @media (max-width: 1670px) {
     .mensagem-ajuda-container {
-        top: 250px;
-        left: 200px;
-        right: 200px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         padding: 25px;
+        width: 80%;
+        max-width: 700px;
     }
 
     .titulo-ajuda {
@@ -92,15 +98,16 @@
     .texto-ajuda {
         font-size: 28px;
     }
-    
 }
 
 @media (max-width: 768px) {
     .mensagem-ajuda-container {
-        top: 150px;
-        left: 50px;
-        right: 50px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         padding: 20px;
+        width: 90%;
+        max-width: 500px;
     }
 
     .titulo-ajuda {
@@ -108,6 +115,30 @@
     }
 
     .texto-ajuda {
-        font-size: 25px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mensagem-ajuda-container {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        max-width: 350px;
+        padding: 15px;
+    }
+
+    .titulo-ajuda {
+        font-size: 35px;
+    }
+
+    .texto-ajuda {
+        font-size: 18px;
+    }
+    
+    .btn-plan {
+        padding: 12px 24px;
+        font-size: 16px;
     }
 }

@@ -1,63 +1,68 @@
 .wallpaper-fundo-membros {
-    height: 900px;
+    height: 100vh;  /* Ocupa 100% da altura da tela */
+    min-height: 600px;
     background: url("../img/minecraft_caverna_wallpaper.png") no-repeat center;
     background-size: cover;
     position: relative;
-}
-
-.texto-membros-titulo {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 350px;
+}
+
+.texto-membros-titulo {
     color: white;
     font-size: 75px;
     font-family: 'Arial', Helvetica, sans-serif;
     font-weight: bold;
     text-shadow: 0px 0px 6px rgb(138,43,226);
+    margin-bottom: 20px;
+}
+
+.texto-membros-container {
+    text-align: center;
+    color: white;
+    width: 90%;
+    max-width: 1200px;
 }
 
 .texto-membros-descricao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 50px;
     color: white;
     font-size: 30px;
     font-family: 'Arial', Helvetica, sans-serif;
+    text-align: center;
 }
 
 .btn-membros {
     display: flex;
-    justify-content: center; /* Alinhamento horizontal */
+    justify-content: center;
     align-items: center;
-    position: relative;
-    margin-top: -130px;  /* Valor negativo move o botão para cima, e positivo para baixo*/
-    margin-bottom: 350px;
+    margin: -140px 0 200px 0;
 }
 
 .membros-card {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    margin-bottom: 100px;
+    margin: 0 auto 100px auto; /*centraliza o card*/
+    max-width: 90%;
 }
 
 .membros-card-item {
-    width: 650px;
-    height: 350px;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    min-height: 200px;
     background-color: rgb(136, 18, 18);
     display: flex;
-    font-size: 35px;
-    justify-content: center; /*centraliza vertical*/
-    align-items: center; /*centraliza horizontal*/
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
     border-radius: 35px;
     text-align: center;
-    transform: rotate(3deg); /*inclina a div 3 graus para a direita*/
+    transform: rotate(3deg);
     box-shadow: 1px 1px 150px rgb(139, 21, 12);
     margin-top: -75px;
+    padding: 30px;
 }
 
 .membros-card-texto {
@@ -66,16 +71,19 @@
 
 .container-parceria {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;/* alinha pelo topo */
+    align-items: flex-start; /*Alinha os itens na vertical no topo do container.*/
     gap: 40px;
-    padding-top: 100px;
+    max-width: 1200px;
+    margin: auto; /*centraliza*/
 }
 
 .parceria, .tipo-parceria {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     border-radius: 20px;
-    padding: 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 
@@ -89,8 +97,8 @@
 
 .parceria-titulo-abaixo p {
     font-size: 17px;
+    margin-bottom: 20px;
 }
-
 .parceria {
     background-color: rgb(85, 11, 11);
 }
@@ -103,16 +111,19 @@
     color: #fff;
     background-color: #5e1010;
     border-radius: 12px;
-    padding: 10px 20px; /* padding interno */
+    padding: 12px 25px;
     font-weight: bold;
     transition: 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+    font-size: 16px;
 }
 
 .parceiros-btn:hover {
     color: #fff;
     background-color: #b31717;
     border-radius: 12px;
-    padding: 10px 20px; /* padding interno */
+    padding: 12px 25px; /* padding interno */
     font-weight: bold;
     transition: 0.3s ease;
     transform: scale(1.04);
@@ -134,15 +145,6 @@
 .toast {
     border-left: 5px solid #dc3545;
     border-radius: 10px;
-    overflow: hidden;
-}
-
-.toast-body {
-    font-weight: 500;
-}
-
-.toast-header {
-    font-size: 14px;
 }
 
 .toast-header img {
@@ -150,30 +152,101 @@
    height: 35px;
 }
 
+@media (max-width: 1200px) {
+    .texto-membros-titulo {
+        font-size: 65px;
+    }
+
+    .texto-membros-descricao {
+        font-size: 28px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .texto-membros-titulo {
+        font-size: 55px;
+    }
+
+    .texto-membros-descricao {
+        font-size: 26px;
+    }
+
+    .membros-card-item {
+        font-size: 30px;
+        max-width: 550px;
+    }
+
+}
+
 @media (max-width: 768px) {
-
-  .texto-membros-titulo {
-      font-size: 40px;
-      padding-top: 300px;
-      text-align: center;
+    .texto-membros-titulo {
+        font-size: 40px;
     }
 
-  .texto-membros-descricao {
-      font-size: 25px;
-      text-align: center;
+    .texto-membros-descricao {
+        font-size: 22px;
     }
 
-    .membros-card {
-        margin-left: 15px;
-        width: 380px;
-        height: 200px;
+    
+    .container-parceria {
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 20px;
     }
-
-    .membros-card-texto {
-        font-size: 27px;
+    
+    .parceria, .tipo-parceria {
+        max-width: 100%;
     }
-
+    
+    .membros-card-item {
+        font-size: 25px;
+        margin-top: -50px;
+        padding: 20px;
+        max-width: 400px;
+    }
+        
     .parceria-texto p {
         font-size: 18px;
+    }
+    
+    .parceria-titulo-abaixo p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .texto-membros-titulo {
+        font-size: 32px;
+    }
+    
+    .texto-membros-descricao {
+        font-size: 18px;
+    }
+    
+    .membros-card-item {
+        font-size: 20px;
+        transform: rotate(0deg);
+        margin-top: -30px;
+        max-width: 300px;
+        padding: 15px;
+    }
+    
+    .btn-parceiros {
+        gap: 10px;
+    }
+    
+    .parceiros-btn {
+        max-width: 100%;
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+    .parceria-texto p {
+        font-size: 16px;
+    }
+    
+    .parceria-titulo-abaixo p {
+        font-size: 14px;
     }
 }
