@@ -1,83 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Servidores Online</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/servers.css">
+        <style>
+            .wallpaper-fundo {
+                height: 900px;
+                background: url("../pw_3bim/img/caverna_musgo.jpg") no-repeat center center;
+                background-size: cover;
+                position: relative;
+                margin-bottom: 100px;/*só p desbugar a ultrapassagem do main por ele*/
+            }
+        </style>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/ecabda1337491b7.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Adquirir servidor</title>
-</head>
-
-<body>
-
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-transparent fixed-top" style="background-color: transparent;">
-        <div class="container navbar-limit">
-            <a class="navbar-brand d-flex align-items-center redstone-text" href="#">
-                <img src="img/redstone.png" alt="Logo" width="50" height="50"
-                    class="d-inline-block align-text-top me-2">
-                Redstone Cloud
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse ms-5" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Hospedagem</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="adqservers.html">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="membros.html">Parceiros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="servers.html">Explore</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ajuda.html">Ajuda</a>
-                    </li>
-                </ul>
-                <a href="formulario.html" class="nav-item btn btn-danger rounded-pill">Login</a>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg bg-transparent fixed-top" style="background-color: transparent;">
+            <div class="container navbar-limit">
+                <a class="navbar-brand d-flex align-items-center redstone-text" href="#">
+                    <img src="img/redstone.png" alt="Logo" width="50" height="50"
+                        class="d-inline-block align-text-top me-2">
+                    Redstone Cloud
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-5" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Hospedagem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="adqservers.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="membros.html">Parceiros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servers.html">Explore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ajuda.html">Ajuda</a>
+                        </li>
+                    </ul>
+                    <a href="formulario.html" class="nav-item btn btn-danger rounded-pill">Login</a>
+                </div>
             </div>
+        </nav>
+
+        <div class="wallpaper-fundo">
+            <div class="mensagem-server-container text-center">
+                <h1 class="titulo-server">Explore Mundos novos</h1>
+                <p class="texto-server">
+                    Encontre experiências únicas criadas pela comunidade
+                </p>
+            </div> 
         </div>
-    </nav>
+              
+    
+        <main>
+            <div class="server-card">
+                <div class="server-info">
+                    <h2>Informações</h2>
+                    <p><strong>Modos:</strong> Sobrevivência</p>
+                    <p>Deixe seu lado gladiador falar mais alto que tudo! Desfrute de lutas incríveis contra outros jogadores, e prove-se O MAIS FORTE.</p>
+                </div>
+                <div class="server-image">
+                    <img src="img/pvp_img.jpg" alt="imagem servidor">
+                </div>
+                <div class="server-details">
+                    <h2>Better PvP</h2>
+                    <p><strong>IP:</strong> 171.67.980.45</p>
+                    <p><strong>Versão:</strong> 1.21.14</p>
+                    <p><strong>Plugins:</strong> Não</p>
+                    <button>Java</button>
+                </div>
+            </div>
+            
+            <div class="server-card">
+                <div class="server-info">
+                    <h2>Informações</h2>
+                    <p><strong>Modos:</strong> Criativo</p>
+                    <p>Desfrute de uma experiência tranquila, construindo sua casa neste mundo medieval. Junte-se a seus amigos, e literalmente, construa seu império.</p>
+                </div>
+                <div class="server-image">
+                    <img src="img/city_img.jpg" alt="imagem servidor">
+                </div>
+                <div class="server-details">
+                    <h2>The Old World</h2>
+                    <p><strong>IP:</strong> 177.80.132.18</p>
+                    <p><strong>Versão:</strong> 1.21</p>
+                    <p><strong>Plugins:</strong> LittleMatica e WorldEdit</p>
+                    <button>Java</button>
+                </div>
+            </div>
+            
+            <div class="server-card">
+                <div class="server-info">
+                    <h2>Informações</h2>
+                    <p><strong>Modos:</strong> Sobrevivência</p>
+                    <p>Desbrave este grandioso mundo da era medieval repleto de mistérios. Seja um cavaleiro, um arqueiro, ou até mesmo um ladino, a escolha é SUA.</p>
+                </div>
+                <div class="server-image">
+                    <img src="img/roleplay_img.jpg" alt="imagem servidor">
+                </div>
+                <div class="server-details">
+                    <h2>Medieval Roleplay</h2>
+                    <p><strong>IP:</strong> 189.54.945.29</p>
+                    <p><strong>Versão:</strong> 1.21.19</p>
+                    <p><strong>Plugins:</strong> MinecraftMMO, MythicMobs</p>
+                    <button>Bedrock</button>
+                </div>
+            </div>
+            
+            <div class="server-card">
+                <div class="server-info">
+                    <h2>Informações</h2>
+                    <p><strong>Modos:</strong> Sobrevivência</p>
+                    <p>Cuidado sobrevivente, o mundo lá fora já não é mais seguro. Espreite pelos escombros do mundo, para tentar SOBREVIVER AO CAOS.</p>
+                </div>
+                <div class="server-image">
+                    <img src="img/TLOU_mine_img.jpg" alt="imagem servidor">
+                </div>
+                <div class="server-details">
+                    <h2>The Last Of Us</h2>
+                    <p><strong>IP:</strong> 247.13.022.45</p>
+                    <p><strong>Versão:</strong> 1.20.5</p>
+                    <p><strong>Plugins:</strong> Valkyrien Skies, Mowzie's Mobs</p>
+                    <button>Bedrock e Java</button>
+                </div>
+            </div>
+        </main>
+        
+        
+        <footer class="footer text-white mt-5">
+            <div class="mobs-gif">
+                <img src="img/mobs_minecraft.gif" alt="animação de mobs do jogo eletrônico minecraft">
+            </div>
 
-    <div class="wallpaper-fundo-servers"></div>
-
-    <main>
-
-    </main>
-
-    <!--Footer-->
-    <footer class="footer text-white">
-        <div class="redes-sociais">
-            <a
-                href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwig29LwptGPAxVfq5UCHb-PE6YQFnoECBwQAQ&url=https%3A%2F%2Fworkspace.google.com%2Fintl%2Fpt-BR%2Fgmail%2F&usg=AOvVaw1MwkeXgAMvW8yty2qMhFps&opi=89978449">
-                <img src="img/email (1).png" alt="email">
-            </a>
-            <a
-                href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiEqbTJptGPAxU8rJUCHeuqIkkQFnoECA4QAQ&url=https%3A%2F%2Fwww.instagram.com%2F&usg=AOvVaw1cBeRoOpMhZ3-x5M1sA3Fm&opi=89978449">
-                <img src="img/instagram.png" alt="instagram">
-            </a>
-            <a
-                href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjSutHfptGPAxXvqpUCHYoVEBUQFnoECB8QAQ&url=https%3A%2F%2Fx.com%2F&usg=AOvVaw0yFQxBNLSDNLE7t39dE_qb&opi=89978449">
-                <img src="img/X.png" alt="X">
-            </a>
-        </div>
-        <div class="container text-center mt-3">
-            <p class="mb-0">2025 Redstone Cloud &copy; Todos os direitos reservados.</p>
-            <p class="mb-0">Desenvolvido por <a style="color: #6d0000; pointer-events: none;">Vinicius e Caio</a></p>
-        </div>
-    </footer>
-
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
-
+            <div class="redes-sociais">
+                <a
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwig29LwptGPAxVfq5UCHb-PE6YQFnoECBwQAQ&url=https%3A%2F%2Fworkspace.google.com%2Fintl%2Fpt-BR%2Fgmail%2F&usg=AOvVaw1MwkeXgAMvW8yty2qMhFps&opi=89978449">
+                    <img src="img/email (1).png" alt="email">
+                </a>
+                <a
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiEqbTJptGPAxU8rJUCHeuqIkkQFnoECA4QAQ&url=https%3A%2F%2Fwww.instagram.com%2F&usg=AOvVaw1cBeRoOpMhZ3-x5M1sA3Fm&opi=89978449">
+                    <img src="img/instagram.png" alt="instagram">
+                </a>
+                <a
+                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjSutHfptGPAxXvqpUCHYoVEBUQFnoECB8QAQ&url=https%3A%2F%2Fx.com%2F&usg=AOvVaw0yFQxBNLSDNLE7t39dE_qb&opi=89978449">
+                    <img src="img/X.png" alt="X">
+                </a>
+            </div>
+            <div class="container text-center mt-3">
+                <p class="mb-0">2025 Redstone Cloud &copy; Todos os direitos reservados.</p>
+                <p class="mb-0">Desenvolvido por <a style="color: #6d0000; pointer-events: none;">Vinicius e Caio</a></p>
+            </div>
+        </footer>
+    </body>
 </html>
